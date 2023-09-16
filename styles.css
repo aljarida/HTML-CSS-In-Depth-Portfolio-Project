@@ -1,0 +1,157 @@
+/*
+    --primary-color: #26877f
+    --secondary-color: #b53434
+*/
+* {
+    margin: 0.25rem;
+    padding: 0;
+    border: 0;
+}
+
+::selection {
+    background-color: #b53434;
+    color: white;
+}
+
+p {
+    font-size: 1rem;
+}
+
+p::first-letter {
+    font-size: 1.125rem;
+    color: blanchedalmond;
+}
+
+h1 {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+header div {
+    text-align: center;
+}
+
+nav {
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 2.5rem;
+
+    border-radius: 1rem;
+    border: 0.375rem solid #b53434;
+
+    background-color: #26877f99;
+    box-shadow: 0.5rem 0.5rem 1.5rem 0.25rem black;
+
+    top: 0;
+    position: sticky;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 10%;
+    max-width: 160vh;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        margin-top: 0.375rem;
+        margin-bottom: 0.375rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+}
+
+a:hover {
+    color: blanchedalmond;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(255, 235, 205, 0.6);
+}
+
+section {
+    margin: 2rem;
+}
+
+picture {
+    margin: 0;
+}
+
+picture img {
+    width: 97.5%;
+    object-fit: cover;
+    object-position: left;
+    border: white 0.1rem solid;
+    border-radius: 0.25rem;
+}
+
+.promotion {
+    text-align: center;
+    padding: 0.5rem;
+
+    border-radius: 1rem;    
+    border: 0.375rem solid #b53434;
+    
+    background-color: #26877f99;
+    color: white;
+
+    box-shadow: 0.5rem 0.5rem 2rem 0.25rem black;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.cards > article {
+    padding: 1rem;
+
+    border-radius: 1rem;
+    border: 0.375rem solid #b53434;
+
+    background-color: #26877f99;
+    color: white;
+
+    box-shadow: 0.25rem 1rem 2rem 0.25rem black;
+}
+
+@media (max-width: 600px) {
+    .cards { grid-template-columns: 1fr;
+    }
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem;
+}
+
+#left-footer {
+    text-align: left;
+}
+
+#right-footer {
+    text-align: right;
+}
+
+#right-footer > ::first-letter {
+    color: #b53434;
+}
